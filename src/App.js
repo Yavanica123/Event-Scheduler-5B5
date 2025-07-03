@@ -15,8 +15,8 @@ export default function App() {
     setLoading(true);
     setTimeout(() => {
       setEvents([
-        { _id: 1, date: new Date(), title: "Team Meeting", desc: "Project updates" },
-        { _id: 2, date: new Date(new Date().setDate(new Date().getDate() + 1)), title: "Doctor Appointment", desc: "Annual checkup" }
+        { _id: 1, date: new Date(), title: "Techsophy Coding Test", desc: "Placements" },
+        { _id: 2, date: new Date(new Date().setDate(new Date().getDate() + 1)), title: "Coding Practice", desc: "Daily routine" }
       ]);
       setLoading(false);
     }, 800);
