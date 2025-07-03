@@ -1,38 +1,135 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/* Fullscreen App Container with Gradient or Solid Color */
+body, html {
+  margin: 0;
+  padding: 0;
   min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #e3f2fd, #fce4ec);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Main App Container Centered */
+.app {
+  text-align: center;
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Heading */
+h1 {
+  color: #2d6cdf;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  color: #555;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+/* Calendar with Light Background */
+.calendar-container {
+  margin: 20px auto;
+  max-width: 350px;
+  background: #ffffffd9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+/* Form Section */
+.event-form {
+  background: #fffefc;
+  padding: 20px;
+  margin: 30px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.event-form h3 {
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.event-form input,
+.event-form textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border 0.3s;
+  background: #f5faff;
+}
+
+.event-form input:focus,
+.event-form textarea:focus {
+  border: 1px solid #2d6cdf;
+  outline: none;
+  background: #ffffff;
+}
+
+.event-form button {
+  background: #2d6cdf;
   color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.event-form button:hover {
+  background: #174ba7;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.event-list {
+  margin-top: 30px;
+}
+
+.event-list h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.event-card {
+  background: #ffffffdb;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin: 15px auto;
+  max-width: 500px;
+  text-align: left;
+  transition: transform 0.2s, background 0.3s;
+  border-left: 5px solid transparent;
+}
+
+.event-card:hover {
+  transform: translateY(-4px);
+  background: #f0f8ff;
+}
+
+.highlight {
+  border-left: 5px solid #e3211a;
+  background: #fff3e8;
+}
+
+.event-card button {
+  background: #eee;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.event-card button:hover {
+  background: #ddd;
 }
