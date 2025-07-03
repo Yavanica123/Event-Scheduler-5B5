@@ -1,4 +1,4 @@
-/* Fullscreen App Container with Gradient or Solid Color */
+
 body, html {
   margin: 0;
   padding: 0;
@@ -8,7 +8,7 @@ body, html {
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* Main App Container Centered */
+
 .app {
   text-align: center;
   padding: 20px;
@@ -16,7 +16,7 @@ body, html {
   margin: auto;
 }
 
-/* Heading */
+
 h1 {
   color: #2d6cdf;
   margin-bottom: 10px;
@@ -28,7 +28,7 @@ h1 {
   margin-bottom: 20px;
 }
 
-/* Calendar with Light Background */
+
 .calendar-container {
   margin: 20px auto;
   max-width: 350px;
@@ -38,7 +38,6 @@ h1 {
   padding: 15px;
 }
 
-/* Form Section */
 .event-form {
   background: #fffefc;
   padding: 20px;
